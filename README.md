@@ -9,7 +9,8 @@ Este laboratorio requiere las siguientes bibliotecas:
 - `matplotlib`
 - `wfdb`
 - `from scipy.stats import norm`  # Para calcular la curva de Gauss
-  Puedes instalar las bibliotecas necesarias ejecutando:
+
+ Puedes instalar las bibliotecas necesarias ejecutando:
 
 pip install numpy pandas matplotlib wfdb
 
