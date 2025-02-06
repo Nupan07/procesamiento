@@ -247,8 +247,26 @@ En esta parte del codigo lo que se logra hacer graficar los datos para que nos d
 
 Como se observa la grafica y la campana dan los valores reales mostrando que la mayoria de valores se encuentran en el centro generando asi la campana , dando a continuacion la muestra del resultado 
 
-![]( )
-  
+![](https://github.com/Nupan07/procesamiento/blob/main/Histograma.png)
+
+## APLICACION DE RUIDO GAUSSIANO , RUIDO IMPULSO Y RUIDO ARTEFACTO
+
+ A continuacion a nuestra señal orginal se  le aplico 3 diferentes ruidos los cuales son :
+ 
+  **RUIDO GAUSSIANO:**
+  El ruido gaussiano es un tipo de ruido aleatorio que sigue una distribución normal, también conocida como distribución gaussiana. Esto significa que los valores del ruido se distribuyen alrededor de una media (generalmente cero) con una desviación estándar específica. La distribución es simétrica y la mayoría de los valores están cerca de la media, disminuyendo gradualmente a medida que nos alejamos de ella.
+
+Donde la linea de codigo para aplicar este ruido a nuestra señal fue :
+
+**ruido_gaussiano = np.random.normal(0, desviacion, voltaje_canal_1.shape)**
+
+  **voltaje_contaminado = voltaje_canal_1 + ruido_gaussiano**
+            
+   **SNR_gaussiano = calcular_SNR(voltaje_canal_1, ruido_gaussiano)**
+   
+Esta línea de código genero  un ruido gaussiano con una media de 0 y una desviación estándar definida por la variable desviacion, y la  suma al voltaje original de voltaje_canal_1 para obtener una señal contaminada llamada voltaje_contaminado. Luego, la se llama a la función calcular_SNR la cual calcula la relación señal/ruido (SNR) entre el voltaje original y el ruido añadido.
+
+
   
 
 
