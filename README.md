@@ -27,7 +27,21 @@ pip install numpy pandas matplotlib wfdb
 ![](https://github.com/Nupan07/procesamiento/blob/main/Physionet.png)
 2. Ingresaremos la sigla EMG (Electromiografia) donde escogeremos la señal de nuestra preferencia donde evidenciaremos toda la informacion referente a esta base de datos.
    En nuestro caso escogimos escoger Stress Recognition in Automobile Drivers
-   
+![](https://github.com/Nupan07/procesamiento/blob/main/Physionet2.png)
 
+## Objetivo del estudio 
 
+El objetivo principal del estudio fue investigar la viabilidad del reconocimiento automático del estrés en conductores durante tareas de conducción en el mundo real. Identificar niveles de estrés a partir de señales fisiológicas permite mejorar la seguridad vial y el diseño de sistemas de asistencia al conductor, contribuyendo a la reducción de accidentes relacionados con el estrés.
+
+## Metodologia de adquisición de datos 
+Se recopilaron grabaciones multiparamétricas de voluntarios sanos mientras conducían por una ruta prescrita en Boston, Massachusetts. La ruta incluyó tanto calles urbanas como autopistas para simular diferentes niveles de estrés en condiciones de tráfico real.
+
+**🔬 Señales registradas:**
+ECG (Electrocardiograma): para monitorear la actividad eléctrica del corazón.
+EMG (Electromiografía) del trapecio derecho: para evaluar la tensión muscular, un indicador clave del estrés físico.
+GSR (Resistencia Galvánica de la Piel): medida en la mano y el pie, para detectar respuestas del sistema nervioso autónomo.
+Frecuencia respiratoria: para analizar patrones de respiración relacionados con el estrés.
+
+3. Al obtener la base de datos deseada descargaremos nuestros archivos el la parte inferior de FILES en este caso utilizaremos el archivo drive01.dat y .hea donde es **necesario** obtener estos 2 archivos  el **.dat** y **.hea**.
+   Al descargar estos dos archivos recordemos que se deben encontrar en la misma carpeta
 
