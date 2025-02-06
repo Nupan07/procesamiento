@@ -38,11 +38,13 @@ El objetivo principal del estudio fue investigar la viabilidad del reconocimient
 Se recopilaron grabaciones multiparamétricas de voluntarios sanos mientras conducían por una ruta prescrita en Boston, Massachusetts. La ruta incluyó tanto calles urbanas como autopistas para simular diferentes niveles de estrés en condiciones de tráfico real.
 
 **🔬 Señales registradas:**
-ECG (Electrocardiograma): para monitorear la actividad eléctrica del corazón.
-EMG (Electromiografía) del trapecio derecho: para evaluar la tensión muscular, un indicador clave del estrés físico.
-GSR (Resistencia Galvánica de la Piel): medida en la mano y el pie, para detectar respuestas del sistema nervioso autónomo.
-Frecuencia respiratoria: para analizar patrones de respiración relacionados con el estrés.
+
+- ECG (Electrocardiograma): para monitorear la actividad eléctrica del corazón.
+- EMG (Electromiografía) del trapecio derecho: para evaluar la tensión muscular, un indicador clave del estrés físico.
+- GSR (Resistencia Galvánica de la Piel): medida en la mano y el pie, para detectar respuestas del sistema nervioso autónomo.
+- Frecuencia respiratoria: para analizar patrones de respiración relacionados con el estrés.
 
 3. Al obtener la base de datos deseada descargaremos nuestros archivos el la parte inferior de FILES en este caso utilizaremos el archivo drive01.dat y .hea donde es **necesario** obtener estos 2 archivos  el **.dat** y **.hea**.
+   
    Al descargar estos dos archivos recordemos que se deben encontrar en la misma carpeta
 
