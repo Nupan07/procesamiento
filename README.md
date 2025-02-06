@@ -24,6 +24,14 @@ pip install numpy pandas matplotlib wfdb
 ## Estructura
 **🔬 Fundamento Teórico**
 
+En el análisis de señales biomédicas, es fundamental comprender ciertos estadísticos descriptivos que permiten resumir y caracterizar el comportamiento de la señal. Estos estadísticos ayudan a identificar patrones, tendencias y variaciones que podrían no ser evidentes a simple vista. A continuación, se explican los principales estadísticos utilizados en esta práctica:
+
+## MEDIA :  
+La media es una medida de tendencia central que representa el valor promedio de una señal. Se calcula sumando todos los valores de la señal y dividiendo entre el número total de muestras. La media también se conoce como media aritmética o promedio. Además, la media de una distribución estadística es equivalente a su esperanza matemática.
+
+
+
+
 1. Buscaremos en Pysionet y selecionaremos el boton DATA
 ![](https://github.com/Nupan07/procesamiento/blob/main/Physionet.png)
 2. Ingresaremos la sigla EMG (Electromiografia) donde escogeremos la señal de nuestra preferencia donde evidenciaremos toda la informacion referente a esta base de datos.
@@ -47,4 +55,5 @@ Se recopilaron grabaciones multiparamétricas de voluntarios sanos mientras cond
 3. Al obtener la base de datos deseada descargaremos nuestros archivos el la parte inferior de FILES en este caso utilizaremos el archivo drive01.dat y .hea donde es **necesario** obtener estos 2 archivos  el **.dat** y **.hea**.
    
    Al descargar estos dos archivos recordemos que se deben encontrar en la misma carpeta
+
 
