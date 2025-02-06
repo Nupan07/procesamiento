@@ -40,6 +40,34 @@ La media es una medida de tendencia central que representa el valor promedio de 
 
 Es una medida de dispersión estadística que indica cuánto se alejan los valores de un conjunto de datos respecto a su media. En otras palabras, refleja el grado de variabilidad o dispersión de los datos: 
 
+  ![](https://github.com/Nupan07/procesamiento/blob/main/Desviaci%C3%B3n.png)
+
+Cuanto mayor sea la desviación estándar de un conjunto de datos, significa que más lejos están los datos de la media. Y la interpretación también se puede hacer al revés, si la desviación estándar es baja quiere decir que en general los datos están muy cerca de su media.
+
+La **desviación estándar** (σ) se calcula con la siguiente fórmula:
+
+\[
+\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}
+\]
+
+Donde:
+
+- \( \sigma \) es la desviación estándar.
+- \( N \) es el número total de observaciones.
+- \( x_i \) representa cada valor del conjunto de datos.
+- \( \mu \) es la media de los datos.
+
+## COEFICIENTE DE VARIACIÓN 
+
+El coeficiente de variación es una medida estadística que sirve para determinar la dispersión de un conjunto de datos respecto a su media. El coeficiente de variación se calcula dividiendo la desviación típica de los datos entre su promedio.
+
+El coeficiente de variación se expresa en forma de porcentaje y suelen utilizarse las siglas CV como símbolo de esta métrica estadística.
+
+
+
+
+
+
 
 
 
