@@ -14,16 +14,20 @@ Este laboratorio requiere las siguientes bibliotecas:
 pip install numpy pandas matplotlib wfdb
 
 ## Objetivos 
-1. Identificar y comprender las características fundamentales de señales biomédicas
-2. Calcular estadísticos descriptivos (media, desviación estándar, coeficiente de variación, histogramas y funciones de probabilidad) para analizar el comportamiento de las señales.
-3. Implementar algoritmos en Python para el procesamiento y análisis estadístico de señales fisiológicas.
-4. Evaluar el impacto del ruido (gaussiano, impulsivo y de artefacto) en las señales biomédicas mediante el cálculo de la relación señal/ruido (SNR).
+- Identificar y comprender las características fundamentales de señales biomédicas
+- Calcular estadísticos descriptivos (media, desviación estándar, coeficiente de variación, histogramas y funciones de probabilidad) para analizar el comportamiento de las señales.
+- Implementar algoritmos en Python para el procesamiento y análisis estadístico de señales fisiológicas.
+- Evaluar el impacto del ruido (gaussiano, impulsivo y de artefacto) en las señales biomédicas mediante el cálculo de la relación señal/ruido (SNR).
 
 
 ## Estructura
 **🔬 Fundamento Teórico**
 
-Buscaremos en Pysionet y selecionaremos el boton DATA
+1. Buscaremos en Pysionet y selecionaremos el boton DATA
+![](https://github.com/Nupan07/procesamiento/blob/main/Physionet.png)
+2. Ingresaremos la sigla EMG (Electromiografia) donde escogeremos la señal de nuestra preferencia donde evidenciaremos toda la informacion referente a esta base de datos.
+   En nuestro caso escogimos escoger Stress Recognition in Automobile Drivers
+   
 
 
 
