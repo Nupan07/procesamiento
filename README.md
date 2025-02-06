@@ -38,7 +38,8 @@ La media es una medida de tendencia central que representa el valor promedio de 
   Donde:
 
 **𝑁: N es el número total de muestras.**
-**X: representa cada uno de los valores de la señal.**
+
+**X_i: representa cada uno de los valores de la señal.**
 
 ## DESVIACIÓN ESTANDAR 
 
