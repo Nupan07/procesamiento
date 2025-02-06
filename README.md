@@ -13,4 +13,17 @@ Este laboratorio requiere las siguientes bibliotecas:
 
 pip install numpy pandas matplotlib wfdb
 
+## Objetivos 
+1. Identificar y comprender las características fundamentales de señales biomédicas
+2. Calcular estadísticos descriptivos (media, desviación estándar, coeficiente de variación, histogramas y funciones de probabilidad) para analizar el comportamiento de las señales.
+3. Implementar algoritmos en Python para el procesamiento y análisis estadístico de señales fisiológicas.
+4. Evaluar el impacto del ruido (gaussiano, impulsivo y de artefacto) en las señales biomédicas mediante el cálculo de la relación señal/ruido (SNR).
+
+
+## Estructura
+**🔬 Fundamento Teórico**
+
+Buscaremos en Pysionet y selecionaremos el boton DATA
+
+
 
