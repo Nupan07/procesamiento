@@ -46,13 +46,9 @@ Cuanto mayor sea la desviación estándar de un conjunto de datos, significa que
 
 La **desviación estándar** (σ) se calcula con la siguiente fórmula:
 
-\[
-\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}
-\]
-
 Donde:
 
-- \( \sigma \) es la desviación estándar.
+- \( σ ) es la desviación estándar.
 - \( N \) es el número total de observaciones.
 - \( x_i \) representa cada valor del conjunto de datos.
 - \( \mu \) es la media de los datos.
@@ -63,13 +59,16 @@ El coeficiente de variación es una medida estadística que sirve para determina
 
 El coeficiente de variación se expresa en forma de porcentaje y suelen utilizarse las siglas CV como símbolo de esta métrica estadística.
 
+![](https://github.com/Nupan07/procesamiento/blob/main/Coeficiente.png)
 
+El **coeficiente de variación** (CV) se calcula con la siguiente fórmula:
 
+Donde:
 
+- \( \sigma \): desviación estándar.
+- \( \mu \): media de los datos.
 
-
-
-
+## INICIO LABORATORIO 
 
 1. Buscaremos en Pysionet y selecionaremos el boton DATA
 ![](https://github.com/Nupan07/procesamiento/blob/main/Physionet.png)
