@@ -135,6 +135,99 @@ A partir de esta grafica iniciaremos con los calculos estadisticos explicados an
 
 - **MEDIA:** Nos permite conocer el valor promedio del voltaje en la señal
   
+  ## MEDIA PROGRAMADA:
+  
+En la parte programada utilizaremos la libreria **Numpy** donde su linea de codigo es : **media = np.mean(voltaje)**
+
+## MEDIA A MANO :
+
+La programacion a mano se utiliza un bucle  for que suma todas las columnas de la fila y las divide por la cantidad de datos que se encuentran en la misma columna, donde se utilizo un contador que este igualado a 0 para que se repita el proceso 
+
+En la parte a mano utilizaremos unicamente **FOR** y el contador igualado a 0 donde su linea de codigo es : 
+
+ **datos=data.copy()
+ 
+    datos.tolist()
+    
+    total=0.0
+    
+    contador=0
+    
+    for x in data:
+    
+      total+=x
+      
+      contador+=1
+      
+    return total/contador if contador != 0 else 0.0**
+    
+   1.**contador+=1** 
+    Simplemente se incrementa el contador en uno por cada iteración, lo que nos permite contar cuántos elementos hay en data.
+Después del bucle, habra una instrucción return que calcula y devuelve un valor.
+
+
+ - **DESVIACIÓN ESTANDAR** Nos dará una medida de la dispersión de los datos, indicando qué tan alejados están los valores individuales respecto a la media.
+
+  ## DESVIACIÓN ESTANDAR PROGRAMADA:
+
+  En la desviación estandar seguiremos utilizando la libreria **Numpy** donde su linea de codigo sera : **desviacion = np.std(voltaje)**
+
+  ## DESVIACIÓN ESTANDAR A MANO:
+
+  **for x in data:
+      diferencia_raiz_suma += (x - mean) ** 2
+      contador+=1
+    return (diferencia_raiz_suma / contador) ** 0.5 if contador != 0 else 0.0**
+
+Ante esta linea de codigo primero, tenemos un bucle for que recorre  sobre cada elemento x en una lista llamada data. es una lista que contiene los datos , ya sea enteros o flotantes.
+
+**Dentro del bucle for tenemos  dos operaciones**}
+
+1. diferencia_raiz_suma += (x - mean) ** 2 . La cual donde cada x , sera restada por el valor ya obtenido de mean ( media) y sera elevado al cuadrado , cada valor suma el cuadrado el valor dado para luego ser sumado a **diferencia_raiz_suma** que esta evaluado a un valor 0.0
+2. **contador += 1**
+   
+Simplemente se  incrementa el contador en uno por cada iteración, lo que nos permite contar cuántos elementos hay en data.
+Después del bucle, habra una instrucción return que calcula y devuelve un valor.
+
+**(diferencia_raiz_suma / contador) ** 0.5**
+Donde primero, se  divide diferencia_raiz_suma por contador, lo que es equivalente a calcular el promedio de los cuadrados de las diferencias respecto a la media.
+Luego, se eleva este promedio a la potencia de 0.5, que es lo mismo que tomar la raíz cuadrada.
+if contador != 0 else 0.0
+Esto es una expresión condicional que dice: si contador no es cero, entonces realiza el cálculo mencionado; de lo contrario, devuelve 0.0
+
+- ## COEFICIENTE DE VARIACIÓN
+
+  Este estara expresado en porcentaje, el cual nos ayudará a comparar la variabilidad relativa de la señal, independientemente de su magnitud.
+
+## COEFICIENTE DE VARIACION PROGRAMADA 
+
+ Donde su linea de codigo sera :  **coef_var = desviacion / media**
+
+## COEFICIENTE DE VARIACIÓN A MANO 
+
+La linea de codigo utilizada para esta parte es 
+
+datos=data.copy()
+
+    datos.tolist()
+    
+    mean = custom_mean(data)
+    
+    if mean == 0:
+    
+        return 0.0  
+        
+    return (custom_std_dev(data) / mean) * 100
+
+Dando por finalizada los calculos estadisticos en este laboratorio , siendo a continuacion se hara la explicacion del Histograma con su respectiva campana de Gauss , ante esto primero comprenderemos brevemente que es la campana de Gauss
+
+## CAMPANA DE GAUSS 
+
+  
+
+
+
+  
   
 
 
