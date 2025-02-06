@@ -98,5 +98,6 @@ Se recopilaron grabaciones multiparamétricas de voluntarios sanos mientras cond
 3. Al obtener la base de datos deseada descargaremos nuestros archivos el la parte inferior de FILES en este caso utilizaremos el archivo drive01.dat y .hea donde es **necesario** obtener estos 2 archivos  el **.dat** y **.hea**.
    
    Al descargar estos dos archivos recordemos que se deben encontrar en la misma carpeta
-
+   
+## Metodologia de graficacion de señal 
 
