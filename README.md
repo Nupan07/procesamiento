@@ -29,6 +29,17 @@ En el análisis de señales biomédicas, es fundamental comprender ciertos estad
 ## MEDIA :  
 La media es una medida de tendencia central que representa el valor promedio de una señal. Se calcula sumando todos los valores de la señal y dividiendo entre el número total de muestras. La media también se conoce como media aritmética o promedio. Además, la media de una distribución estadística es equivalente a su esperanza matemática.
 
+  ![](https://github.com/Nupan07/procesamiento/blob/main/MEDIA.png)
+
+  Donde:
+
+**𝑁: N es el número total de muestras.**
+**X: representa cada uno de los valores de la señal.**
+
+## DESVIACIÓN ESTANDAR 
+
+Es una medida de dispersión estadística que indica cuánto se alejan los valores de un conjunto de datos respecto a su media. En otras palabras, refleja el grado de variabilidad o dispersión de los datos: 
+
 
 
 
