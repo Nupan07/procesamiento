@@ -223,10 +223,31 @@ Dando por finalizada los calculos estadisticos en este laboratorio , siendo a co
 
 ## CAMPANA DE GAUSS 
 
+La campana de Gauss, es conocida como la distribución normal, donde su tipo de distribución de probabilidad  se representa gráficamente como una curva en forma de campana.
+
+  ## HISTOGRAMA 
+
+Ante los calculos estadisticos anteriores se grafica un histograma de la media el cual se aplicara la campana de Gauss para demostrar la distribucion real de los datos , donde para sacar correspondiente grafica se utilizo el siguiente fragmento de codigo 
+
+ # Crear histograma
+ 
+    plt.figure(figsize=(10, 6))
+    
+    plt.hist(voltaje, bins=50, color='skyblue', edgecolor='black', density=True, label='Histograma')
+
+  ## Crear la curva de Gauss
   
+    x = np.linspace(min(voltaje), max(voltaje), 1000)
+    
+    gauss = norm.pdf(x, loc=media, scale=desviacion)
+    
+    plt.plot(x, gauss, color='red', linewidth=2, label='Campana de Gauss')
 
+En esta parte del codigo lo que se logra hacer graficar los datos para que nos de el histograma logrando variar el ancho y el largo de la grafica de la media y en la creacion de la curva de Gauss se logra modificar el color y el grosor de la linea.
 
+Como se observa la grafica y la campana dan los valores reales mostrando que la mayoria de valores se encuentran en el centro generando asi la campana , dando a continuacion la muestra del resultado 
 
+![]( )
   
   
 
