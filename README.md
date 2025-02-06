@@ -126,7 +126,18 @@ voltaje_canal_1 = signal.p_signal[:, 1]  # Selección del canal EMG (posición 1
 - voltaje_canal_1: Guardamos estos datos en una variable que llamamos así para mayor claridad, pero puedes nombrarla como prefieras.
 
 ## Donde nos arroja la siguiente grafica:
-![]()
+
+![](https://github.com/Nupan07/procesamiento/blob/main/Se%C3%B1alorginal.png)
+
+A partir de esta grafica iniciaremos con los calculos estadisticos explicados anteriormente, que incluyen:
+
+**RECORDEMOS QUE CADA CALCULO UTILIZAREMOS DOS METODOS UNA PROGRAMADA Y OTRA A MANO**
+
+- **MEDIA:** Nos permite conocer el valor promedio del voltaje en la señal
+  
+  
+
+
 
 
 
