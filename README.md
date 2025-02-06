@@ -101,6 +101,32 @@ Se recopilaron grabaciones multiparamétricas de voluntarios sanos mientras cond
    
 ## Metodologia de graficacion de señal 
 
-Para lograr graficar la señal lo primero que se debe hacer es descargar las libreria (wfdb) este libreria nos ayudara a leer el docuemento descargado y poder observar los datos guardados en ese archivo, lo siguiente es llamar el archivo al compilador escogido , el archivo escogido (drive01) nos dara los canales que traen guardados en el archivo lo que haremos es averiguar cual es el canal que nos corresponde para lo que nos piden, para poder observar los canales podemos crear una linea de codigo que nos muestres los canales guerdados o pedir a una IA que lea el archivo y nos diga cuantos canales trae el archivo y como se llaman , la parte del codigo para leer los canales seria (canales = record.sig_name) con este codigo podremos observar los canales siendo los siguientes ('ECG', 'EMG', 'foot GSR', 'hand GSR', 'HR', 'RESP') ya teniendo los nombres de los canales y en que poscion se encuentran lo siguiente es llamar ese canal, como el archivo se lee como si fuera una matris tenemos que hacer que lea la fila del canal correspondiente y que de esa fila lea todos los datos de las columna para poder graficarla , nosotro utilizaremos la fila (1) ya que es la EMG.
+# 📊 Cómo Graficar una Señal de EMG
 
-Teniendo el canal que usaremos lo siguiente es graficar la señal y que nos muestre los datos que trae, para esto se utilizara la libreria (matplotlib.pyplot) ya que esta libreria nos ayuda a graficar, se crea el codigo con las especificaciones del tamaño de la grafico especificando el ancho y lo largo que se ve , tambien nombrando la grafica y sus ejes .
+Para poder graficar la señal, lo primero que necesitamos es descargar la librería **`wfdb`**. Esta librería es súper útil porque nos permite leer archivos de datos fisiológicos, como el que vamos a usar. Básicamente, se encarga de abrir el documento descargado y mostrarnos la información que contiene.  
+
+Una vez tengas instalada la librería, el siguiente paso es **cargar el archivo en el compilador** que estés usando. En este caso, trabajaremos con un archivo llamado **`drive01`**. Este archivo contiene varios canales de datos, pero no todos nos interesan, así que lo que haremos será identificar cuál canal necesitamos para nuestra tarea.  
+
+### 🔍 ¿Cómo saber qué canales trae el archivo?  
+Aquí hay dos formas de hacerlo:  
+1. Puedes escribir una simple línea de código que te muestre los canales guardados.  
+2. O si quieres hacerlo más rápido, incluso puedes usar una IA que lea el archivo y te diga cuántos canales hay y cómo se llaman.  
+
+Si prefieres la opción del código, solo necesitas esto:  
+
+canales = record.sig_name 
+
+donde nos saldran los correspondientes canales que se encuentran en nuestra señal el siguiente paso a dar ante esto es seleccionar el canal que utilizaremos en esta caso sera la señal **EMG** , dado que este archivo se organiza de forma matricial , necesitaremos decirle al programa que fila ( canal) queremos leer. Luego le diremos que tome todos los datos  de esa fila para graficarlos.
+
+**Donde utilizaremos la siguiente linea de codgigo :**
+
+voltaje_canal_1 = signal.p_signal[:, 1]  # Selección del canal EMG (posición 1)
+
+- signal.p_signal[:, 1]: Seleccionamos todos los datos (todas las filas) del canal que está en la posición 1.
+- voltaje_canal_1: Guardamos estos datos en una variable que llamamos así para mayor claridad, pero puedes nombrarla como prefieras.
+
+## Donde nos arroja la siguiente grafica:
+
+
+
+
