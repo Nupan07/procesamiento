@@ -269,13 +269,22 @@ Esta línea de código genero  un ruido gaussiano con una media de 0 y una desvi
 
 
 
-    ##ANALISIS DE DATOS ESTADISTICOS
+##ANALISIS DE DATOS ESTADISTICOS 
 
-Los hallazgos v͏istos muestran la senda de acción mostrada por la información tomada. El total usual indica el valor est͏án͏dar de la͏ act͏ividad muscular durante el tiempo de control, lo cual ayuda a ve͏r si la señal normal está subiendo o͏ baj͏ando. Este trecho cambiado conserva ͏el mismo sentido p͏ero usa s͏in͏ónimos para͏ algunas palabras. M͏ediana es ͏un s͏inónimo comú͏n para medio. "La mediana, qu͏e mues͏tra la ten͏dencia͏ centra͏l de un conjunto de datos identifica͏ posibles sesgos e in͏dica valores fuera de lugar que podrían d͏es͏afiar la visión͏ tradicional de los datos."͏
+La señal de electromiografía (EMG) analizada presenta una media de -0.0055 mV, lo que indica que, en promedio, la actividad muscular registrada se mantiene en un nivel bajo. La mediana de -0.0047 sugiere que la mayor parte de los valores se encuentran cerca de este punto, lo que indica que la señal tiene una distribución ligeramente sesgada, posiblemente debido a picos de actividad o ruido presente en la medición.
 
-La varianza estándar indica el grado de dispersión de la señal en relación con su promedio. En términos más simples, si hay mucha actividad en los músculos, decimos que hay mucho cambio; si apenas hay algo que cambia, se llama cambio pequeño. El coeficiente de variación, una medida que muestra la semejanza entre la dispersión y la tendencia central en porcentajes, permite la evaluación uniforme de la uniformidad de la señal. Un coeficiente de variabilidad alto implica una desviación significativa de la media, lo que sugiere fluctuaciones abruptas en los movimientos musculares o una interrupción de la señal.
+La desviación estándar de  0.0411 mV refleja una variabilidad considerable en la señal, lo que sugiere cambios en la actividad muscular a lo largo del tiempo. Finalmente, el coeficiente de variación del 753.52% muestra que la variabilidad relativa de la señal es muy alta en comparación con su media, lo que puede deberse a fluctuaciones bruscas en la actividad muscular o a la presencia de ruido en la adquisición de datos.
 
-Con estas variables, la señal del movimiento muscular se puede marcar claramente, lo que puede ayudar a comparar diferentes experimentos o situaciones.
+Estos resultados indican que la señal presenta una gran dispersión y valores extremos que pueden influir en la interpretación de la actividad muscular, por lo que es recomendable analizar su espectro de frecuencia o aplicar técnicas de filtrado para reducir posibles interferencias.
+
+
+
+
+
+
+
+
+
 
   
 
