@@ -265,6 +265,7 @@ el cual se calcula de con la siguiente formula:
 El valor de SNR también se puede expresar en decibelios (dB):
 
 ![](https://github.com/Nupan07/procesamiento/blob/main/SNRDB.png)
+
  A continuacion a nuestra señal orginal se  le aplico 3 diferentes ruidos los cuales son :
  
   **RUIDO GAUSSIANO:**
@@ -307,23 +308,9 @@ En este código se introduce ruido de impulso en la  señal y  calcula su SNR (R
 ![](https://github.com/Nupan07/procesamiento/blob/main/Ruidoimpulso.png)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  **RUIDO ARTEFACTO :**
+
+ 
 
 
  ## Analisis de datos estadisticos 
