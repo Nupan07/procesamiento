@@ -269,8 +269,9 @@ Esta línea de código genero  un ruido gaussiano con una media de 0 y una desvi
 
 
 
-##ANALISIS DE DATOS ESTADISTICOS 
 
+ ## Analisis de datos estadisticos 
+ 
 La señal de electromiografía (EMG) analizada presenta una media de -0.0055 mV, lo que indica que, en promedio, la actividad muscular registrada se mantiene en un nivel bajo. La mediana de -0.0047 sugiere que la mayor parte de los valores se encuentran cerca de este punto, lo que indica que la señal tiene una distribución ligeramente sesgada, posiblemente debido a picos de actividad o ruido presente en la medición.
 
 La desviación estándar de  0.0411 mV refleja una variabilidad considerable en la señal, lo que sugiere cambios en la actividad muscular a lo largo del tiempo. Finalmente, el coeficiente de variación del 753.52% muestra que la variabilidad relativa de la señal es muy alta en comparación con su media, lo que puede deberse a fluctuaciones bruscas en la actividad muscular o a la presencia de ruido en la adquisición de datos.
