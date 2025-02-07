@@ -266,7 +266,7 @@ Donde la linea de codigo para aplicar este ruido a nuestra señal fue :
    
 Esta línea de código genero  un ruido gaussiano con una media de 0 y una desviación estándar definida por la variable desviacion, y la  suma al voltaje original de voltaje_canal_1 para obtener una señal contaminada llamada voltaje_contaminado. Luego, la se llama a la función calcular_SNR la cual calcula la relación señal/ruido (SNR) entre el voltaje original y el ruido añadido.
 
-
+![]
 
 
 
