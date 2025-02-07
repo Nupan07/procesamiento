@@ -270,6 +270,27 @@ Esta línea de código genero  un ruido gaussiano con una media de 0 y una desvi
 
 
 
+ **RUIDO IMPULSO:**
+ El ruido de impulso es una interferencia transitoria que aparece como picos agudos y breves en la señal EMG. Estos picos no están relacionados con la actividad muscular real, sino que son artefactos introducidos por fuentes externas o internas al sistema de medición.
+
+Este tipo de ruido suele ser de naturaleza eléctrica y puede superponerse a la señal EMG, alterando su forma y dificultando su interpretación
+
+Donde la linea de codigo para aplicar este ruido a nuestra señal fue :
+# Ruido de Impulso
+            probabilidad_impulso = 0.02
+            
+            amplitud_impulso = 0.2
+            
+            ruido_impulso = np.random.choice([0.02, amplitud_impulso, -amplitud_impulso], size=voltaje_canal_1.shape, p=[1 - probabilidad_impulso, probabilidad_impulso / 2, probabilidad_impulso / 2])
+            
+            voltaje_contaminado_impulso = voltaje_canal_1 + ruido_impulso
+            
+            SNR_impulso = calcular_SNR(voltaje_canal_1, ruido_impulso)
+            
+En este código se introduce ruido de impulso en la  señal y  calcula su SNR (Relación Señal-Ruido). Primero, define la probabilidad del ruido (2%) y su amplitud (0.2). Luego, genera un conjunto de valores aleatorios donde el 98% de los puntos son 0.02 (sin ruido), el 1% son +0.2 (impulso positivo) y el 1% son -0.2 (impulso negativo). Este ruido se suma a la señal original (voltaje_canal_1) para crear una nueva señal contaminada la cual seria la siguiente:
+
+![]
+
  ## Analisis de datos estadisticos 
  
 La señal de electromiografía (EMG) analizada presenta una media de -0.0055 mV, lo que indica que, en promedio, la actividad muscular registrada se mantiene en un nivel bajo. La mediana de -0.0047 sugiere que la mayor parte de los valores se encuentran cerca de este punto, lo que indica que la señal tiene una distribución ligeramente sesgada, posiblemente debido a picos de actividad o ruido presente en la medición.
