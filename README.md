@@ -267,6 +267,16 @@ Donde la linea de codigo para aplicar este ruido a nuestra señal fue :
 Esta línea de código genero  un ruido gaussiano con una media de 0 y una desviación estándar definida por la variable desviacion, y la  suma al voltaje original de voltaje_canal_1 para obtener una señal contaminada llamada voltaje_contaminado. Luego, la se llama a la función calcular_SNR la cual calcula la relación señal/ruido (SNR) entre el voltaje original y el ruido añadido.
 
 
+
+
+  **ANALISIS DE DATOS ESTADISTICOS**
+
+Los hallazgos v͏istos muestran la senda de acción mostrada por la información tomada. El total usual indica el valor est͏án͏dar de la͏ act͏ividad muscular durante el tiempo de control, lo cual ayuda a ve͏r si la señal normal está subiendo o͏ baj͏ando. Este trecho cambiado conserva ͏el mismo sentido p͏ero usa s͏in͏ónimos para͏ algunas palabras. M͏ediana es ͏un s͏inónimo comú͏n para medio. "La mediana, qu͏e mues͏tra la ten͏dencia͏ centra͏l de un conjunto de datos identifica͏ posibles sesgos e in͏dica valores fuera de lugar que podrían d͏es͏afiar la visión͏ tradicional de los datos."͏
+
+La varianza estándar indica el grado de dispersión de la señal en relación con su promedio. En términos más simples, si hay mucha actividad en los músculos, decimos que hay mucho cambio; si apenas hay algo que cambia, se llama cambio pequeño. El coeficiente de variación, una medida que muestra la semejanza entre la dispersión y la tendencia central en porcentajes, permite la evaluación uniforme de la uniformidad de la señal. Un coeficiente de variabilidad alto implica una desviación significativa de la media, lo que sugiere fluctuaciones abruptas en los movimientos musculares o una interrupción de la señal.
+
+Con estas variables, la señal del movimiento muscular se puede marcar claramente, lo que puede ayudar a comparar diferentes experimentos o situaciones.
+
   
 
 
