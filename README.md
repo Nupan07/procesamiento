@@ -324,7 +324,7 @@ Este código agrega ruido de impulso, que son interferencias breves en la señal
             SNR_artefacto = calcular_SNR(voltaje_canal_1, ruido_artefacto)
 Este código agrega  el ruido llamado artefacto, que es una interferencia periódica de 50 Hz, similar a la producida por la electricidad en equipos electrónicos. Primero, crea una onda senoidal de baja intensidad (0.05) y la suma a la señal original. Luegose calcula cuánto afecta este ruido a la señal mediante el SNR (Relación Señal-Ruido). 
 
-![]
+![](https://github.com/Nupan07/procesamiento/blob/main/RuidoArtefacto.png)
 
 
  ## Analisis de datos estadisticos 
