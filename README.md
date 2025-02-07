@@ -277,6 +277,7 @@ Este tipo de ruido suele ser de naturaleza eléctrica y puede superponerse a la 
 
 Donde la linea de codigo para aplicar este ruido a nuestra señal fue :
 # Ruido de Impulso
+
             probabilidad_impulso = 0.02
             
             amplitud_impulso = 0.2
@@ -289,7 +290,10 @@ Donde la linea de codigo para aplicar este ruido a nuestra señal fue :
             
 En este código se introduce ruido de impulso en la  señal y  calcula su SNR (Relación Señal-Ruido). Primero, define la probabilidad del ruido (2%) y su amplitud (0.2). Luego, genera un conjunto de valores aleatorios donde el 98% de los puntos son 0.02 (sin ruido), el 1% son +0.2 (impulso positivo) y el 1% son -0.2 (impulso negativo). Este ruido se suma a la señal original (voltaje_canal_1) para crear una nueva señal contaminada la cual seria la siguiente:
 
-![]
+![](https://github.com/Nupan07/procesamiento/blob/main/Ruidoimpulso.png)
+
+ **RUIDO ARTEFACTO :**
+
 
  ## Analisis de datos estadisticos 
  
