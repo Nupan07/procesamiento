@@ -5,13 +5,6 @@ Created on Wed Feb  5 19:31:38 2025
 @author: valen
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jan 27 21:04:46 2025
-
-@author: valen
-"""
-
 import wfdb
 import numpy as np
 import matplotlib.pyplot as plt
