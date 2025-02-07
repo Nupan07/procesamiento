@@ -241,7 +241,7 @@ Dando por finalizada los calculos estadisticos en este laboratorio , siendo a co
 
 La campana de Gauss, es conocida como la distribución normal, donde su tipo de distribución de probabilidad  se representa gráficamente como una curva en forma de campana.
 
-## HISTOGRAMA 
+## HISTOGRAMAS PROGRAMADO Y MANUAL
 
 Ante los calculos estadisticos anteriores se grafica un histograma de la media el cual se aplicara la campana de Gauss para demostrar la distribucion real de los datos , donde para sacar correspondiente grafica se utilizo el siguiente fragmento de codigo 
 
@@ -264,6 +264,65 @@ En esta parte del codigo lo que se logra hacer graficar los datos para que nos d
 Como se observa la grafica y la campana dan los valores reales mostrando que la mayoria de valores se encuentran en el centro generando asi la campana , dando a continuacion la muestra del resultado 
 
 ![](https://github.com/Nupan07/procesamiento/blob/main/Histograma.png)
+
+**HISTOGRAMA A MANO**
+Para realizar el histograma a mano mediante la programacion usamos la siguiente composicion :
+
+def calcular_histograma_manual(voltaje, num_bins=50):
+    """Calcula el histograma manualmente contando valores en intervalos."""
+    min_val = min(voltaje)
+    max_val = max(voltaje)
+    bin_width = (max_val - min_val) / num_bins
+    histograma = [0] * num_bins
+    
+    for valor in voltaje:
+        bin_index = int((valor - min_val) / bin_width)
+        if bin_index == num_bins:
+            bin_index -= 1
+        histograma[bin_index] += 1
+    
+    return histograma, min_val, max_val, bin_width, num_bins, max(histograma)
+
+def calcular_pdf_manual(voltaje, num_bins, max_hist):
+    """Calcula la función de densidad de probabilidad manualmente y la escala para ajustarla al histograma."""
+    media = sum(voltaje) / len(voltaje)
+    desviacion = math.sqrt(sum((x - media) ** 2 for x in voltaje) / len(voltaje))
+    
+    x_vals = np.linspace(min(voltaje), max(voltaje), 100)
+    pdf_vals = [(1 / (desviacion * math.sqrt(2 * math.pi))) * 
+                math.exp(-0.5 * ((x - media) / desviacion) ** 2) for x in x_vals]
+    
+    # Ajustar la escala de la PDF al histograma
+    scale_factor = max_hist / max(pdf_vals)
+    pdf_vals = [p * scale_factor for p in pdf_vals]
+    
+    return x_vals, pdf_vals
+
+def graficar_histograma_y_pdf_manual(voltaje, titulo):
+    """Grafica el histograma manual junto con la función de probabilidad (campana de Gauss) manual escalada."""
+    histograma, min_val, max_val, bin_width, num_bins, max_hist = calcular_histograma_manual(voltaje)
+    bins = np.linspace(min_val, max_val, len(histograma))
+    x_vals, pdf_vals = calcular_pdf_manual(voltaje, num_bins, max_hist)
+    
+**1. Cálculo del Histograma Manual (calcular_histograma_manual)**
+
+- Donde se determina el rango de valores en la señal (min_val y max_val).
+  
+- Se divide este rango en un número fijo de intervalos (num_bins), calculando el ancho de cada bin (bin_width).
+  
+- Se inicializa un vector histograma que almacena la cantidad de muestras en cada bin.
+  
+- Se recorre cada valor de la señal y se determina en qué bin debe ubicarse, incrementando el contador correspondiente.Finalmente, se devuelve el histograma y sus parámetros clave.
+  
+**2.Cálculo de la Función de Densidad de Probabilidad**
+  
+-Se calculan la media y la desviación estándar de la señal, necesarias para definir la distribución normal.
+
+-Se genera un conjunto de valores x_vals que abarcan el mismo rango de la señal. Para cada valor de x_vals, se evalúa la ecuación de la distribución normal (función de Gauss).
+
+Donde podemos observar la grafica calculada:
+
+![](https://github.com/Nupan07/procesamiento/blob/main/Histogramamanual.png)
 
 ## SNR Y  APLICACION DE RUIDO GAUSSIANO , RUIDO IMPULSO Y RUIDO ARTEFACTO
 
