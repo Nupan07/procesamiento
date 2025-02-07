@@ -269,39 +269,49 @@ Como se observa la grafica y la campana dan los valores reales mostrando que la 
 Para realizar el histograma a mano mediante la programacion usamos la siguiente composicion :
 
 def calcular_histograma_manual(voltaje, num_bins=50):
+
     """Calcula el histograma manualmente contando valores en intervalos."""
-    min_val = min(voltaje)
+ min_val = min(voltaje)
+ 
     max_val = max(voltaje)
+    
     bin_width = (max_val - min_val) / num_bins
+    
     histograma = [0] * num_bins
     
     for valor in voltaje:
+    
         bin_index = int((valor - min_val) / bin_width)
+        
         if bin_index == num_bins:
+        
             bin_index -= 1
+            
         histograma[bin_index] += 1
     
     return histograma, min_val, max_val, bin_width, num_bins, max(histograma)
 
 def calcular_pdf_manual(voltaje, num_bins, max_hist):
+
     """Calcula la función de densidad de probabilidad manualmente y la escala para ajustarla al histograma."""
+    
     media = sum(voltaje) / len(voltaje)
+    
     desviacion = math.sqrt(sum((x - media) ** 2 for x in voltaje) / len(voltaje))
     
     x_vals = np.linspace(min(voltaje), max(voltaje), 100)
-    pdf_vals = [(1 / (desviacion * math.sqrt(2 * math.pi))) * 
-                math.exp(-0.5 * ((x - media) / desviacion) ** 2) for x in x_vals]
     
-    # Ajustar la escala de la PDF al histograma
-    scale_factor = max_hist / max(pdf_vals)
-    pdf_vals = [p * scale_factor for p in pdf_vals]
+    pdf_vals = [(1 / (desviacion * math.sqrt(2 * math.pi))) * math.exp(-0.5 * ((x - media) / desviacion) ** 2) for x in x_vals]
     
-    return x_vals, pdf_vals
 
 def graficar_histograma_y_pdf_manual(voltaje, titulo):
+
     """Grafica el histograma manual junto con la función de probabilidad (campana de Gauss) manual escalada."""
+    
     histograma, min_val, max_val, bin_width, num_bins, max_hist = calcular_histograma_manual(voltaje)
+    
     bins = np.linspace(min_val, max_val, len(histograma))
+    
     x_vals, pdf_vals = calcular_pdf_manual(voltaje, num_bins, max_hist)
     
 **1. Cálculo del Histograma Manual (calcular_histograma_manual)**
