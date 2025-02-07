@@ -333,7 +333,6 @@ La señal de electromiografía (EMG) analizada presenta una media de -0.0055 mV,
 
 La desviación estándar de  0.0411 mV refleja una variabilidad considerable en la señal, lo que sugiere cambios en la actividad muscular a lo largo del tiempo. Finalmente, el coeficiente de variación del 753.52% muestra que la variabilidad relativa de la señal es muy alta en comparación con su media, lo que puede deberse a fluctuaciones bruscas en la actividad muscular o a la presencia de ruido en la adquisición de datos.
 
-Estos resultados indican que la señal presenta una gran dispersión y valores extremos que pueden influir en la interpretación de la actividad muscular, por lo que es recomendable analizar su espectro de frecuencia o aplicar técnicas de filtrado para reducir posibles interferencias.
 
  ## Analisis de SNR
  
