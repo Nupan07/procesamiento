@@ -418,16 +418,16 @@ Este código agrega  el ruido llamado artefacto, que es una interferencia perió
 - La señal de electromiografía (EMG) analizada presenta una media de -0.0055 mV, lo que indica que en promedio, la actividad muscular registrada se mantiene en un nivel bajo.
 - La mediana de -0.0047 sugiere que la mayor parte de los valores se encuentran cerca de este punto, lo que indica que la señal tiene una distribución ligeramente sesgada, posiblemente debido a picos de actividad o ruido presente en la medición.
   
--La desviación estándar de  0.0411 mV refleja una variabilidad considerable en la señal, lo que sugiere cambios en la actividad muscular a lo largo del tiempo. Finalmente, el coeficiente de variación del 753.52% muestra que la variabilidad relativa de la señal es muy alta en comparación con su media, lo que puede deberse a fluctuaciones bruscas en la actividad muscular o a la presencia de ruido en la adquisición de datos.
+- La desviación estándar de  0.0411 mV refleja una variabilidad considerable en la señal, lo que sugiere cambios en la actividad muscular a lo largo del tiempo. Finalmente, el coeficiente de variación del 753.52% muestra que la variabilidad relativa de la señal es muy alta en comparación con su media, lo que puede deberse a fluctuaciones bruscas en la actividad muscular o a la presencia de ruido en la adquisición de datos.
 
 
  ## Analisis de SNR
  
--Ruido Gaussiano (SNR = 0.0071): Este tipo de ruido es el más perjudicial porque prácticamente "entra" la señal, dejando muy poca claridad. El valor extremadamente bajo del SNR indica que el ruido es tan fuerte que la señal casi desaparece.
+- Ruido Gaussiano (SNR = 0.0071): Este tipo de ruido es el más perjudicial porque prácticamente "entra" la señal, dejando muy poca claridad. El valor extremadamente bajo del SNR indica que el ruido es tan fuerte que la señal casi desaparece.
 
--Ruido Impulso (SNR = 0.8058): En este caso, el ruido tiene menos impacto en la señal. El SNR es relativamente alto, lo que sugiere que la señal sigue siendo distinguible y clara a pesar de las interferencias.
+- Ruido Impulso (SNR = 0.8058): En este caso, el ruido tiene menos impacto en la señal. El SNR es relativamente alto, lo que sugiere que la señal sigue siendo distinguible y clara a pesar de las interferencias.
 
--Ruido Artefacto (SNR = 0.6909): Aquí, el nivel de afectación está en un punto medio. El SNR muestra que hay algo de interferencia, pero la señal aún es bastante clara.
+- Ruido Artefacto (SNR = 0.6909): Aquí, el nivel de afectación está en un punto medio. El SNR muestra que hay algo de interferencia, pero la señal aún es bastante clara.
 
 
 
