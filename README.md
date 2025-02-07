@@ -309,6 +309,7 @@ En este código se introduce ruido de impulso en la  señal y  calcula su SNR (R
 
 
  **RUIDO ARTEFACTO :**
+ El ruido artefacto es un tipo de interferencia o distorsión que aparece en una señal, imagen o audio, pero no de forma natural. Normalmente ocurre por problemas técnicos, errores en la captura de datos o fallos en los dispositivos. A diferencia de otros ruidos como el ruido gaussiano (que es aleatorio), el ruido artefacto suele tener patrones repetitivos o predecibles.
 
  
 
