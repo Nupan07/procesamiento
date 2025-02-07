@@ -268,7 +268,7 @@ Como se observa la grafica y la campana dan los valores reales mostrando que la 
 **HISTOGRAMA A MANO**
 Para realizar el histograma a mano mediante la programacion usamos la siguiente composicion :
 
- def calcular_histograma_manual(voltaje, num_bins=50):
+  def calcular_histograma_manual(voltaje, num_bins=50):
 
     """Calcula el histograma manualmente contando valores en intervalos."""
  min_val = min(voltaje)
@@ -291,7 +291,7 @@ Para realizar el histograma a mano mediante la programacion usamos la siguiente 
     
     return histograma, min_val, max_val, bin_width, num_bins, max(histograma)
 
-   def calcular_pdf_manual(voltaje, num_bins, max_hist):
+              def calcular_pdf_manual(voltaje, num_bins, max_hist):
 
     """Calcula la función de densidad de probabilidad manualmente y la escala para ajustarla al histograma."""
     
@@ -304,7 +304,7 @@ Para realizar el histograma a mano mediante la programacion usamos la siguiente 
     pdf_vals = [(1 / (desviacion * math.sqrt(2 * math.pi))) * math.exp(-0.5 * ((x - media) / desviacion) ** 2) for x in x_vals]
     
 
-   def graficar_histograma_y_pdf_manual(voltaje, titulo):
+              def graficar_histograma_y_pdf_manual(voltaje, titulo):
 
     """Grafica el histograma manual junto con la función de probabilidad (campana de Gauss) manual escalada."""
     
