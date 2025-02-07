@@ -303,7 +303,8 @@ Donde la linea de codigo para aplicar este ruido a nuestra señal fue :
             
             SNR_impulso = calcular_SNR(voltaje_canal_1, ruido_impulso)
             
-En este código se introduce ruido de impulso en la  señal y  calcula su SNR (Relación Señal-Ruido). Primero, define la probabilidad del ruido (2%) y su amplitud (0.2). Luego, genera un conjunto de valores aleatorios donde el 98% de los puntos son 0.02 (sin ruido), el 1% son +0.2 (impulso positivo) y el 1% son -0.2 (impulso negativo). Este ruido se suma a la señal original (voltaje_canal_1) para crear una nueva señal contaminada la cual seria la siguiente:
+Este código agrega ruido de impulso, que son interferencias breves en la señal. La mayoría de los puntos no tienen ruido (98%), pero algunos tienen impulsos positivos o negativos (1% cada uno). Luego, se suma a la señal original y se calcula el SNR para medir su impacto, dando la siguiente señal:
+
 
 ![](https://github.com/Nupan07/procesamiento/blob/main/Ruidoimpulso.png)
 
@@ -311,7 +312,19 @@ En este código se introduce ruido de impulso en la  señal y  calcula su SNR (R
  **RUIDO ARTEFACTO :**
  El ruido artefacto es un tipo de interferencia o distorsión que aparece en una señal, imagen o audio, pero no de forma natural. Normalmente ocurre por problemas técnicos, errores en la captura de datos o fallos en los dispositivos. A diferencia de otros ruidos como el ruido gaussiano (que es aleatorio), el ruido artefacto suele tener patrones repetitivos o predecibles.
 
- 
+ Donde la linea de codigo para aplicar este ruido a nuestra señal fue :
+    amplitud_artefacto = 0.05
+            
+            t = np.arange(len(voltaje_canal_1)) / signal.fs
+            
+            ruido_artefacto = amplitud_artefacto * np.sin(2 * np.pi * frecuencia_artefacto * t)
+            
+            voltaje_contaminado_artefacto = voltaje_canal_1 + ruido_artefacto
+            
+            SNR_artefacto = calcular_SNR(voltaje_canal_1, ruido_artefacto)
+Este código agrega  el ruido llamado artefacto, que es una interferencia periódica de 50 Hz, similar a la producida por la electricidad en equipos electrónicos. Primero, crea una onda senoidal de baja intensidad (0.05) y la suma a la señal original. Luegose calcula cuánto afecta este ruido a la señal mediante el SNR (Relación Señal-Ruido). 
+
+![]
 
 
  ## Analisis de datos estadisticos 
