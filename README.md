@@ -335,7 +335,13 @@ La desviación estándar de  0.0411 mV refleja una variabilidad considerable en 
 
 Estos resultados indican que la señal presenta una gran dispersión y valores extremos que pueden influir en la interpretación de la actividad muscular, por lo que es recomendable analizar su espectro de frecuencia o aplicar técnicas de filtrado para reducir posibles interferencias.
 
+ ## Analisis de SNR
+ 
+-Ruido Gaussiano (SNR = 0.0071): Este tipo de ruido es el más perjudicial porque prácticamente "entra" la señal, dejando muy poca claridad. El valor extremadamente bajo del SNR indica que el ruido es tan fuerte que la señal casi desaparece.
 
+-Ruido Impulso (SNR = 0.8058): En este caso, el ruido tiene menos impacto en la señal. El SNR es relativamente alto, lo que sugiere que la señal sigue siendo distinguible y clara a pesar de las interferencias.
+
+-Ruido Artefacto (SNR = 0.6909): Aquí, el nivel de afectación está en un punto medio. El SNR muestra que hay algo de interferencia, pero la señal aún es bastante clara.
 
 
 
