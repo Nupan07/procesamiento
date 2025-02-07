@@ -251,6 +251,20 @@ Como se observa la grafica y la campana dan los valores reales mostrando que la 
 
 ## APLICACION DE RUIDO GAUSSIANO , RUIDO IMPULSO Y RUIDO ARTEFACTO
 
+  
+A continuacion para comprender este laboratorio explicaremos que es SNR
+
+## QUE ES SNR?
+
+La relación señal/ruido (SNR, por sus siglas en inglés) es una medida que compara el nivel de la señal útil con el nivel del ruido en un sistema de comunicación o procesamiento de señales. Se expresa generalmente en decibelios (dB) y se define como la relación entre la potencia de la señal y la potencia del ruido. Cuanto mayor sea el SNR, mejor será la calidad de la señal, ya que habrá menos interferencia del ruido.
+
+el cual se calcula de con la siguiente formula:
+
+![](https://github.com/Nupan07/procesamiento/blob/main/SNR.png)
+
+El valor de SNR también se puede expresar en decibelios (dB):
+
+![](https://github.com/Nupan07/procesamiento/blob/main/SNRDB.png)
  A continuacion a nuestra señal orginal se  le aplico 3 diferentes ruidos los cuales son :
  
   **RUIDO GAUSSIANO:**
@@ -292,19 +306,7 @@ En este código se introduce ruido de impulso en la  señal y  calcula su SNR (R
 
 ![](https://github.com/Nupan07/procesamiento/blob/main/Ruidoimpulso.png)
 
-A continuacion para comprender este laboratorio explicaremos que es SNR
 
-## QUE ES SNR?
-
-La relación señal/ruido (SNR, por sus siglas en inglés) es una medida que compara el nivel de la señal útil con el nivel del ruido en un sistema de comunicación o procesamiento de señales. Se expresa generalmente en decibelios (dB) y se define como la relación entre la potencia de la señal y la potencia del ruido. Cuanto mayor sea el SNR, mejor será la calidad de la señal, ya que habrá menos interferencia del ruido.
-
-el cual se calcula de con la siguiente formula:
-
-![](https://github.com/Nupan07/procesamiento/blob/main/SNR.png)
-
-El valor de SNR también se puede expresar en decibelios (dB):
-
-![](https://github.com/Nupan07/procesamiento/blob/main/SNRDB.png)
 
 
 
