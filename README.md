@@ -24,7 +24,7 @@ pip install numpy pandas matplotlib wfdb
 
 
 ## Estructura
-**🔬 Fundamento Teórico**
+**🔬 FUNDAMENTO TEÓRICO**
 
 En el análisis de señales biomédicas, es fundamental comprender ciertos estadísticos descriptivos que permiten resumir y caracterizar el comportamiento de la señal. Estos estadísticos ayudan a identificar patrones, tendencias y variaciones que podrían no ser evidentes a simple vista. 
 
